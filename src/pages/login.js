@@ -29,9 +29,9 @@ const login = () => {
     }
 
     return (
-        <div className='container my-4' style={{ width: "40%", margin: "auto" }}>
+        <div className='container my-4' style={{ width: "60%", margin: "auto" }}>
             <form onSubmit={handleLogin}>
-                <h1 className='text-center'>Login</h1>
+                <h1 className='text-center my-3'>Login</h1>
                 <div className="mb-3">
                     <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
                     <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Enter your Email" value={data.email} onChange={
@@ -45,7 +45,7 @@ const login = () => {
                     } />
                 </div>
                 <div className='text-center'>
-                    <button className="btn btn-primary" type='submit'>Login</button>
+                    <button className="btn btn-primary my-3" type='submit'>Login</button>
                 </div>
                 <div id='error' className = 'text-center text-danger my-2'>
                 </div>
