@@ -40,8 +40,9 @@ const login = () => {
                 </div>
                 <div className="mb-3">
                     <label htmlFor="inputPassword" className="form-label">Password</label>
-                    <input type="password" className="form-control" id="inputPassword" placeholder='Enter your Password' value={data.password} onChange=
-                        {(e) => { setData({ ...data, password: e.target.value }) }} />
+                    <input type="password" className="form-control" id="inputPassword" placeholder='Enter your Password' value={data.email} onChange={
+                        (e) => { setData({ ...data, email: e.target.value }) }
+                    } />
                 </div>
                 <div className='text-center'>
                     <button className="btn btn-primary" type='submit'>Login</button>

@@ -1,10 +1,8 @@
-import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 import { useAuth } from './Context/AuthContext'
 import Link from 'next/link';
 
 const signup = () => {
-    const router = useRouter();
     const { signup } = useAuth();
     const [data, setData] = useState({
         email: "",
